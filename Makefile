@@ -18,6 +18,6 @@ input/input%.in: sample/input%.asm simulator.py
 	python assembler.py -i $< -o $@
 
 clean:
-	rm *.in *.out main
+	rm -r input output
 
 .PHONY: clean input test simulate
